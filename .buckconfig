@@ -1,0 +1,17 @@
+[project]
+  ignore = .git
+
+[parser]
+  default_build_file_syntax = SKYLARK
+
+[gflags]
+  namespace = gflags
+
+[cxx]
+  should_remap_host_platform = true
+  cxxppflags = -DGFLAGS_BAZEL_BUILD=1
+
+[cxx#linux-x86_64]
+  should_remap_host_platform = true
+  cxxflags = -std=c++14
+  cxxppflags = -DGFLAGS_BAZEL_BUILD=1 -DHAVE_PTHREAD=1 -DHAVE_RWLOCK=1 -DHAVE_SYS_STAT_H=1 -DHAVE_STDINT_H=1 -DHAVE_INTTYPES_H=1 -DHAVE_STRTOLL=1 -DHAVE_FNMATCH_H=1 -DHAVE_UNISTD_H=1

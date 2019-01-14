@@ -1,0 +1,9 @@
+cxx_binary(
+  name = 'nc',
+  srcs = [
+    'gflags_nc.cc',
+  ],
+  deps = [
+    '//:gflags',
+  ],
+)

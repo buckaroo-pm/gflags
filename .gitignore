@@ -23,3 +23,10 @@ CMakeLists.txt.user
 /bazel-gflags
 /bazel-out
 /bazel-testlogs
+
+buck-out
+.buckd
+buckaroo
+.buckconfig.local
+.buckconfig.d
+buckaroo_macros.bzl
